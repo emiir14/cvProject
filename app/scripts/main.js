@@ -1,3 +1,19 @@
+// ==================================== activate animation on scroll ================================0
+
+$(window).scroll(function () {
+    $('.animation-test').each(function () {
+        var imagePos = $(this).offset().top;
+        var imageHeight = $(this).height();
+        var topOfWindow = $(window).scrollTop();
+
+        if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
+            $(this).addClass("slideRight");
+        } else {
+            $(this).removeClass("slideRight");
+        }
+    });
+});
+
 // =============== SCROLL SECTION BY SECTION ================
 
 (function($) {
@@ -125,3 +141,9 @@ btn.on('click', function(e) {
   e.preventDefault();
   $('html, body').animate({scrollTop:0}, '300');
 });
+
+
+
+
+
+

@@ -6,19 +6,6 @@ html, body {
     margin: 0;
   }
 
-  body {
-    font-family: 'Acme', sans-serif;
-    text-shadow: 4px 4px 4px #aaa;
-  }
-
-  #middleDiv {
-    padding-top: 150px;
-  }
-  #imgSection2 {
-    height: 100%;
-	  width: 100%;
-  }
-
   // =============================== back to top buttom ===============================
  
   #button {
@@ -72,11 +59,30 @@ html, body {
 
   #cvDesc {
       padding-left: 20px;
-      padding-top: 80px;
+      padding-top: 45px;
   }
 
   .navbar {
       padding-top: 40px;
+  }
+
+// ============================== styling second div ============================
+    body {
+      font-family: 'Acme', sans-serif;
+      text-shadow: 4px 4px 4px #aaa;
+    }
+  
+    #middleDiv {
+      padding-top: 150px;
+    }
+    #imgSection2 {
+      height: 100%;
+      width: 100%;
+    }
+  
+// =========================================== styling tercera sección ======================================
+  #contactDiv {
+    padding-top: 80px;
   }
 
   //   ===================================  divisor posterior a navbar  ================
@@ -129,4 +135,59 @@ html, body {
       width: 100px;
   }
 
-  // ===================================================================================================
+  // ========================================= left to right animation ==========================================================
+
+  .element-to-hide{
+    visibility:hidden;
+  }
+
+.slideRight {
+    visibility: visible;
+    animation-name: slideRight;
+    -webkit-animation-name: slideRight;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-150%);
+    }
+    50% {
+        transform: translateX(8%);
+    }
+    65% {
+        transform: translateX(-4%);
+    }
+    80% {
+        transform: translateX(4%);
+    }
+    95% {
+        transform: translateX(-2%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+@-webkit-keyframes slideRight {
+    0% {
+        -webkit-transform: translateX(-150%);
+    }
+    50% {
+        -webkit-transform: translateX(8%);
+    }
+    65% {
+        -webkit-transform: translateX(-4%);
+    }
+    80% {
+        -webkit-transform: translateX(4%);
+    }
+    95% {
+        -webkit-transform: translateX(-2%);
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+} 
