@@ -1,13 +1,14 @@
 html, body {
-    background: #FFEFBA; 
     background: -webkit-linear-gradient(to left, #FFFFFF, #FFEFBA);  
     background: linear-gradient(to left, #FFFFFF, #FFEFBA); 
     padding-top: 0;
     margin: 0;
+    font-family: 'Acme', sans-serif;
+    text-shadow: 4px 4px 4px #aaa;
+    overflow-x: hidden;
   }
 
   // =============================== back to top buttom ===============================
- 
   #button {
     display: inline-block;
     width: 50px;
@@ -43,9 +44,13 @@ html, body {
     opacity: 1;
     visibility: visible;
   }
+
+  img {
+    height: 100px;
+    width: 100px;
+  }
   
   // =========================================== styling primera seccion ===========================
-
   #divFotoTexto {
       padding-top: 15px;
   }
@@ -54,7 +59,7 @@ html, body {
     border-radius: 999em;
 	  height: 100%;
 	  width: 100%;	
-	  margin: 0;
+	  margin: 10;
   }
 
   #cvDesc {
@@ -66,82 +71,76 @@ html, body {
       padding-top: 40px;
   }
 
-// ============================== styling second div ============================
-    body {
-      font-family: 'Acme', sans-serif;
-      text-shadow: 4px 4px 4px #aaa;
-    }
-  
-    #middleDiv {
-      padding-top: 150px;
-    }
-    #imgSection2 {
-      height: 100%;
-      width: 100%;
-    }
-  
-// =========================================== styling tercera sección ======================================
-  #contactDiv {
-    padding-top: 80px;
+  //   ====================================  borde de imagen de perfil ========================
+  div.imageborder {
+    border-radius: 999em;
+    width: 70%;
+    height: auto;
+    padding: 20px;
+    line-height: 0;
+    background-image: url(https://fatpony.me/wp-content/uploads/2014/11/mylittleponies-bg-tutorial.jpg);
+    background-size: 150px; 
   }
 
   //   ===================================  divisor posterior a navbar  ================
   .divider {
-	position: relative;
-	margin-top: 10px;
-	height: 1px;
+	  position: relative;
+	  margin-top: 10px;
+	  height: 1px;
   }
 
-.div-transparent:before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 5%;
-	right: 5%;
-	width: 90%;
-	height: 1px;
-	background-image: linear-gradient(to right, transparent, rgb(47, 67, 107), transparent);
+  .div-transparent:before {
+	  content: "";
+	  position: absolute;
+	  top: 0;
+	  left: 5%;
+	  right: 5%;
+	  width: 90%;
+	  height: 1px;
+	  background-image: linear-gradient(to right, transparent, rgb(47, 67, 107), transparent);
   }
 
-//   ====================================  borde de imagen de perfil ========================
+  // ========================================== styling segunda sección ============================
+  #middleDiv {
+    padding-top: 100px;
+  }
 
-  div.imageborder {
-	border-radius: 999em;
-	width: 70%;
-	height: auto;
-	padding: 20px;
-	line-height: 0;
-	background-image: url(https://fatpony.me/wp-content/uploads/2014/11/mylittleponies-bg-tutorial.jpg);
-	background-size: 150px; /* Adjust the scale of your border image */
-}
-  
-    // ==================================== css para el paso entre secciones ==================
-
-  .section {
-      min-height: 300px;
-  }
-  .s1 {
-      background-color: hsla(0,0%,0%,.02);
-  }
-  .s2 {
-      background-color: hsla(0,0%,0%,.02);
-  }
-  .s3 {
-      background-color: hsla(0,0%,0%,.02);
+  #imgSection2 {
+    height: 100%;
+    width: 100%;
   }
   
-  img {
-      height: 100px;
-      width: 100px;
+  // =========================================== styling tercera sección ======================================
+  #contactDiv {
+    padding-top: 87px;
+  }
+
+  #contactP {
+    padding-top: 17px;
+  }
+                           
+  .pxl-border {   
+    width: 70%;
+    box-shadow: -2px 0 0 0 black, 2px 0 0 0 black, 0 -4px 0 0 black, 0 4px 0 0 black, 0 -10px 0 -2px black, 0 10px 0 -2px black, 0 -14px 0 -4px black, 0 14px 0 -4px black, 0 -20px 0 -8px black, 0 20px 0 -8px black, 0 -26px 0 -12px black, 0 26px 0 -12px black, -4px 0 0 0 white, 4px 0 0 0 white, 0 -2px 0 2px white, 0 2px 0 2px white, 0 -8px 0 0px white, 0 8px 0 0px white, 0 -12px 0 -2px white, 0 12px 0 -2px white, 0 -16px 0 -4px white, 0 16px 0 -4px white, 0 -22px 0 -8px white, 0 22px 0 -8px white, 0 -28px 0 -12px white, 0 28px 0 -12px white, -6px 0 0 0 black, 6px 0 0 0 black, 0 0 0 4px black, 0 -6px 0 2px black, 0 6px 0 2px black, 0 -10px 0 0 black, 0 10px 0 0 black, 0 -14px 0 -2px black, 0 14px 0 -2px black, 0 -18px 0 -4px black, 0 18px 0 -4px black, 0 -24px 0 -8px black, 0 24px 0 -8px black, 0 -30px 0 -12px black, 0 30px 0 -12px black;
+  }  // borde tercera seccion
+
+  #finalRowDivs {
+    padding-top: 35px;
+  }
+
+  #footerDiv {
+    padding-top: 160px;
+    max-width: 600px;
+    overflow: hidden;
+    margin: 0 auto 50px;
   }
 
   // ========================================= left to right animation ==========================================================
-
   .element-to-hide{
     visibility:hidden;
   }
 
-.slideRight {
+  .slideRight {
     visibility: visible;
     animation-name: slideRight;
     -webkit-animation-name: slideRight;
@@ -149,9 +148,9 @@ html, body {
     -webkit-animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
     -webkit-animation-timing-function: ease-in-out;
-}
+  }
 
-@keyframes slideRight {
+  @keyframes slideRight {
     0% {
         transform: translateX(-150%);
     }
@@ -170,8 +169,8 @@ html, body {
     100% {
         transform: translateX(0%);
     }
-}
-@-webkit-keyframes slideRight {
+  }
+  @-webkit-keyframes slideRight {
     0% {
         -webkit-transform: translateX(-150%);
     }
@@ -191,3 +190,224 @@ html, body {
         -webkit-transform: translateX(0%);
     }
 } 
+
+  // ============================ right to left animation =================================
+
+  .slideLeft {
+    visibility: visible;
+    animation-name: slideLeft;
+    -webkit-animation-name: slideLeft;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+
+  @keyframes slideLeft {
+    0% {
+      transform: translateX(150%);
+    }
+    50% {
+      transform: translateX(-8%);
+    }
+    65% {
+      transform: translateX(4%);
+    }
+    80% {
+      transform: translateX(-4%);
+    }
+    95% {
+      transform: translateX(+2%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  @-webkit-keyframes slideLeft {
+    0% {
+      -webkit-transform: translateX(150%);
+    }
+    50% {
+      -webkit-transform: translateX(-8%);
+    }
+    65% {
+      -webkit-transform: translateX(4%);
+    }
+    80% {
+      -webkit-transform: translateX(-4%);
+    }
+    95% {
+      -webkit-transform: translateX(2%);
+    }
+    100% {
+      -webkit-transform: translateX(0%);
+    }
+  } 
+
+  // ================================== button sliding on hover ==================================
+  * {
+    box-sizing: border-box;
+  }
+  *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+  }
+  button.coverRight {
+    width: 12rem;
+    height: auto;
+    padding-bottom: 3px;
+  }
+  button.coverRight .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+  }
+  button.coverRight .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+  }
+  button.coverRight .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+  }
+  button.coverRight .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.25rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  button.coverRight .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  button:hover .circle {
+    width: 100%;
+  }
+  button:hover .circle .icon.arrow {
+    background: #fff;
+    -webkit-transform: translate(1rem, 0);
+    transform: translate(1rem, 0);
+  }
+  button:hover .button-text {
+    color: #fff;
+  }
+
+  // ================================================= pixelated border ======================================
+
+  .style_prevu_kit  {
+    display:inline-block;
+    height: 170px;
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);   
+  }
+
+  .style_prevu_kit:hover  {
+    box-shadow: -2px 0 0 0 black, 2px 0 0 0 black, 0 -4px 0 0 black, 0 4px 0 0 black, 0 -10px 0 -2px black, 0 10px 0 -2px black, 0 -14px 0 -4px black, 0 14px 0 -4px black, 0 -20px 0 -8px black, 0 20px 0 -8px black, 0 -26px 0 -12px black, 0 26px 0 -12px black, -4px 0 0 0 white, 4px 0 0 0 white, 0 -2px 0 2px white, 0 2px 0 2px white, 0 -8px 0 0px white, 0 8px 0 0px white, 0 -12px 0 -2px white, 0 12px 0 -2px white, 0 -16px 0 -4px white, 0 16px 0 -4px white, 0 -22px 0 -8px white, 0 22px 0 -8px white, 0 -28px 0 -12px white, 0 28px 0 -12px white, -6px 0 0 0 black, 6px 0 0 0 black, 0 0 0 4px black, 0 -6px 0 2px black, 0 6px 0 2px black, 0 -10px 0 0 black, 0 10px 0 0 black, 0 -14px 0 -2px black, 0 14px 0 -2px black, 0 -18px 0 -4px black, 0 18px 0 -4px black, 0 -24px 0 -8px black, 0 24px 0 -8px black, 0 -30px 0 -12px black, 0 30px 0 -12px black;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
+  }
+
+  // ========================================= show content on hover ===========================
+  #stuff {
+    opacity: 0.0;
+    position: absolute;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+  }
+
+  #hover:hover + #stuff {
+    opacity: 1.0;
+  }
+
+  // =============================== final hr =====================================
+
+  .subtitle {
+    margin: 0 0 2em 0;
+  }
+  .fancy {
+    line-height: 0.5;
+    text-align: center;
+  }
+  .fancy span {
+    display: inline-block;
+    position: relative;  
+  }
+  .fancy span:before,
+  .fancy span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    top: 0;
+    width: 600px;
+  }
+  .fancy span:before {
+    right: 100%;
+    margin-right: 15px;
+  }
+  .fancy span:after {
+    left: 100%;
+    margin-left: 15px;
+  }
+
+
+

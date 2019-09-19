@@ -1,5 +1,5 @@
 // ==================================== activate animation on scroll ================================0
-
+      
 $(window).scroll(function () {
     $('.animation-test').each(function () {
         var imagePos = $(this).offset().top;
@@ -10,6 +10,20 @@ $(window).scroll(function () {
             $(this).addClass("slideRight");
         } else {
             $(this).removeClass("slideRight");
+        }
+    });
+});
+
+$(window).scroll(function () {
+    $('.animation-test2').each(function () {
+        var imagePos = $(this).offset().top;
+        var imageHeight = $(this).height();
+        var topOfWindow = $(window).scrollTop();
+
+        if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
+            $(this).addClass("slideLeft");
+        } else {
+            $(this).removeClass("slideLeft");
         }
     });
 });
@@ -113,7 +127,7 @@ $(document).ready(function() {
     });
 });
 
-// ====================================== ir a sección por click  ==========================================
+// ====================================== go to seccion by clicking on href  ==========================================
 
 $("a[href^='#']").click(function(e) {
 	e.preventDefault();
@@ -141,6 +155,10 @@ btn.on('click', function(e) {
   e.preventDefault();
   $('html, body').animate({scrollTop:0}, '300');
 });
+
+// =========================================== new staff ===============================================
+
+
 
 
 
