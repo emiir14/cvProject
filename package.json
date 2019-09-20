@@ -46,7 +46,7 @@
     "build": "cross-env NODE_ENV=production gulp",
     "test": "npm run serve:test",
     "tasks": "gulp --tasks",
-    "postinstall": "node ./heroku-build.js "
+    "postinstall": "node ./ops/heroku-build.js"
   },
   "browserslist": [
     "> 1%",
