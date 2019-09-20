@@ -9,7 +9,7 @@
     "modernizr": "^3.6.0",
     "package": "^1.0.1",
     "popper.js": "^1.14.6",
-    "procfile": "^0.1.1"
+    "webpack": "^4.40.2"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
@@ -44,7 +44,7 @@
     "serve:test": "cross-env NODE_ENV=test gulp serve",
     "serve:dist": "cross-env NODE_ENV=production gulp serve",
     "start": "gulp serve",
-    "build": "cross-env NODE_ENV=production gulp",
+    "build:production": "cross-env NODE_ENV=production webpack",
     "test": "npm run serve:test",
     "tasks": "gulp --tasks",
     "postinstall": ""
