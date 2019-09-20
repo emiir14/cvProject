@@ -7,9 +7,9 @@ $(window).scroll(function () {
         var topOfWindow = $(window).scrollTop();
 
         if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
-            $(this).addClass("slideRight");
+            $(this).addClass('slideRight');
         } else {
-            $(this).removeClass("slideRight");
+            $(this).removeClass('slideRight');
         }
     });
 });
@@ -21,9 +21,9 @@ $(window).scroll(function () {
         var topOfWindow = $(window).scrollTop();
 
         if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
-            $(this).addClass("slideLeft");
+            $(this).addClass('slideLeft');
         } else {
-            $(this).removeClass("slideLeft");
+            $(this).removeClass('slideLeft');
         }
     });
 });
@@ -34,7 +34,7 @@ $(window).scroll(function () {
 	$.fn.sectionsnap = function( options ) {
 		var settings = $.extend({
 			'delay'				: 100 // time dilay (ms)
-			, 'selector'		: ".section" // selector
+			, 'selector'		: '.section' // selector
 			, 'reference'		: .9 // % of window height from which we start
 			, 'animationTime'	: 400 // animation time (snap scrolling)
 			, 'offsetTop'		: 0 // offset top (no snap before scroll reaches this position)
@@ -106,7 +106,7 @@ $(window).scroll(function () {
 			var st = $(window).scrollTop();
 			if (st < settings.offsetTop)
 				return;
-			if (st > ($("html").height() - $(window).height() - settings.offsetBottom))
+			if (st > ($('html').height() - $(window).height() - settings.offsetBottom))
 				return;
 			updateDirection();
 			window.clearTimeout(scrollTimer);
@@ -118,8 +118,8 @@ $(window).scroll(function () {
 })(jQuery);
 
 $(document).ready(function() {
-    $(".section").css("min-height", $(window).height() + "px");
-    $(".sections-wrapper").sectionsnap({
+    $('.section').css('min-height', $(window).height() + 'px');
+    $('.sections-wrapper').sectionsnap({
         delay : 100
         , selector : '.section'
         , reference : 1
@@ -129,12 +129,12 @@ $(document).ready(function() {
 
 // ====================================== go to seccion by clicking on href  ==========================================
 
-$("a[href^='#']").click(function(e) {
+$('a[href^=\'#\']').click(function(e) {
 	e.preventDefault();
 	
-	var position = $($(this).attr("href")).offset().top;
+	var position = $($(this).attr('href')).offset().top;
 
-	$("body, html").animate({
+	$('body, html').animate({
 		scrollTop: position
 	} /* speed */ );
 });
