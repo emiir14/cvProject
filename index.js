@@ -5,8 +5,9 @@ var app = express();
 var http = require('http');
 var server = http.Server(app);
 
-app.use(express.static('app'));
+app.use(express.static('client'));
 
 server.listen(PORT, function() {
-  console.log('CV Running');
+  console.log('CV Runing');
 });
+
