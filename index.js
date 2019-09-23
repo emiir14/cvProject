@@ -5,7 +5,7 @@ var app = express();
 var http = require('http');
 var server = http.Server(app);
 
-app.use(express.static(__dirname + '/public'));
+app.use('/static', express.static('public'));
 
 server.listen(PORT, function() {
   console.log('CV Runing');
