@@ -41,7 +41,7 @@
   },
   "scripts": {
     "serve:test": "cross-env NODE_ENV=test gulp serve",
-    "serve:dist": "cross-env NODE_ENV=production gulp serve",
+    "serve:dist": "browser-sync start --no-open --server --files \"dist/css/*.css, dist/js/*.js, **/*.html, !node_modules/**/*.html\"",
     "start": "gulp serve",
     "build": "cross-env NODE_ENV=production gulp",
     "test": "npm run serve:test",
