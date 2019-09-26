@@ -13,7 +13,7 @@ const { argv } = require('yargs');
 const $ = gulpLoadPlugins();
 const server = browserSync.create();
 
-const port = argv.port || 80;
+const port = argv.port || 5000;
 
 const isProd = process.env.NODE_ENV === 'production';
 const isTest = process.env.NODE_ENV === 'test';
