@@ -4,11 +4,23 @@ html, body {
     padding-top: 0;
     margin: 0;
     font-family: 'Acme', sans-serif !important;
+    /* font-size: 1vw; */
     text-shadow: 4px 4px 4px #aaa;
     overflow-x: hidden;
   }
 
-   /* =============================== back to top buttom =============================== */
+/* ================================== responsiveness ======================================== */
+  @media (max-width: 600px) {
+    #navShrink {
+        width: 20% !important;
+        height: 20% !important;
+    }
+    .divider {
+      margin-top: 5% !important;
+    }
+  }
+
+/* =============================== back to top buttom =============================== */
   #button {
     display: inline-block;
     width: 50px;
@@ -50,41 +62,31 @@ html, body {
   }
   
    /* =========================================== styling primera seccion =========================== */
-  #divFotoTexto {
-      padding-top: 15px;
-  }
-
-  #cvPicture {
-    border-radius: 999em;
-	  height: 100%;
-	  width: 100%;	
-	  margin: 10;
-  }
-
   #cvDesc {
       padding-left: 20px;
-      padding-top: 45px;
+      padding-top: 65px;
   }
 
-  .navbar {
-      padding-top: 40px;
+  /* ==================  borde de imagen de perfil =================== */
+  .img-border {
+    height: 28vw;
+	  width: 22vw;	
+	  margin: 10;
+    margin: 40px auto;
+    border: 5vw solid transparent;
+    border-image-source: url(https://s-media-cache-ak0.pinimg.com/236x/62/4a/b7/624ab7b6fc84f5079237532406ce388f.jpg);
+    border-image-slice: 46 49;
+    border-image-repeat: round;
+  }
+  
+  .img-border:hover {
+    transform: rotate(-6deg);
   }
 
-     /* ====================================  borde de imagen de perfil ======================== */
-  div.imageborder {
-    border-radius: 999em;
-    width: 70%;
-    height: auto;
-    padding: 20px;
-    line-height: 0;
-    background-image: url(https://fatpony.me/wp-content/uploads/2014/11/mylittleponies-bg-tutorial.jpg);
-    background-size: 150px; 
-  }
-
-     /* ===================================  divisor posterior a navbar  ================ */
+/* ===================================  divisor posterior a navbar  ================ */
   .divider {
 	  position: relative;
-	  margin-top: 10px;
+	  margin-top: 15px;
 	  height: 1px;
   }
 
@@ -99,7 +101,7 @@ html, body {
 	  background-image: linear-gradient(to right, transparent, rgb(47, 67, 107), transparent);
   }
 
-   /* ========================================== styling segunda sección ============================ */
+/* ========================================== styling segunda sección ============================ */
   #middleDiv {
     padding-top: 100px;
   }
@@ -109,7 +111,7 @@ html, body {
     width: 100%;
   }
   
-   /* =========================================== styling tercera sección ====================================== */
+/* =========================================== styling tercera sección ====================================== */
   #contactDiv {
     padding-top: 87px;
   }
@@ -134,7 +136,7 @@ html, body {
     margin: 0 auto 50px;
   }
 
-   /* ========================================= left to right animation ========================================================== */
+/* ========================================= left to right animation ========================================================== */
   .element-to-hide{
     visibility:hidden;
   }
@@ -190,7 +192,7 @@ html, body {
     }
 } 
 
-   /* ============================ right to left animation ================================= */
+/* ============================ right to left animation ================================= */
 
   .slideLeft {
     visibility: visible;
@@ -243,7 +245,7 @@ html, body {
     }
   } 
 
-   /* ================================== button sliding on hover ================================== */
+/* ================================== button sliding on hover ================================== */
   * {
     box-sizing: border-box;
   }
@@ -255,7 +257,7 @@ html, body {
     position: relative;
     display: inline-block;
     cursor: pointer;
-    outline: none;
+    outline: none !important;
     border: 0;
     vertical-align: middle;
     text-decoration: none;
@@ -332,7 +334,19 @@ html, body {
     color: #fff;
   }
 
-   /* ================================================= pixelated border ====================================== */
+/* ======== and rotating! ============= */
+  .rotate {
+    -moz-transition: all .9s linear;
+    -webkit-transition: all .9s linear;
+    transition: all .9s linear;
+  }
+  .rotate.down {
+    -moz-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    transform:rotate(360deg);
+  }
+
+/* ================================================= pixelated border ====================================== */
 
   .style_prevu_kit  {
     display:inline-block;
@@ -361,7 +375,7 @@ html, body {
     transform: scale(1.5);
   }
 
-   /* ========================================= show content on hover =========================== */
+/* ========================================= show content on hover =========================== */
   #stuff {
     opacity: 0.0;
     position: absolute;
@@ -376,7 +390,7 @@ html, body {
     opacity: 1.0;
   }
 
- /* =============================== final hr ===================================== */
+/* =============================== final hr ===================================== */
 
   .subtitle {
     margin: 0 0 2em 0;
