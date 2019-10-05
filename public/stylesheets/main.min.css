@@ -1,23 +1,46 @@
 html, body {
-    background: -webkit-linear-gradient(to left, #FFFFFF, #FFEFBA);  
-    background: linear-gradient(to left, #FFFFFF, #FFEFBA); 
+    /* background: -webkit-linear-gradient(to left, #FFFFFF, #FFEFBA);  
+    background: linear-gradient(to left, #FFFFFF, #FFEFBA);  */
+    background-color: #D3D3D3 !important;
+    background-image: url("https://images.unsplash.com/photo-1529448155365-b176d2c6906b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 50%;
     padding-top: 0;
     margin: 0;
     font-family: 'Acme', sans-serif !important;
-    /* font-size: 1vw; */
+    font-size: 1.2vw;
     text-shadow: 4px 4px 4px #aaa;
     overflow-x: hidden;
   }
 
+
 /* ================================== responsiveness ======================================== */
   @media (max-width: 600px) {
+    #button:hover {
+      border: 0px !important;
+    }
     #navShrink {
-        width: 20% !important;
-        height: 20% !important;
+      padding-top: 9px !important;
+      width: 30% !important;
+      height: 30% !important;
+      font-size: 15px !important;
+    }
+    #imgShrink {
+      width: 50% !important;
+      height: 50% !important;
     }
     .divider {
       margin-top: 5% !important;
     }
+    #contactDiv {
+      width: 85% !important;
+      height: 85% !important;
+    }
+    /* img {
+      width: 50% !important;
+      height: 50% !important;
+    } */
   }
 
 /* =============================== back to top buttom =============================== */
@@ -29,7 +52,7 @@ html, body {
     border-radius: 4px;
     position: fixed;
     bottom: 100px;
-    right: 50px;
+    right: 2%;
     transition: background-color .3s, 
       opacity .5s, visibility .5s;
     opacity: 0;
@@ -42,11 +65,12 @@ html, body {
     font-style: normal;
     font-size: 2em;
     line-height: 50px;
-    color: #fff;
+    color: transparent;
   }
   #button:hover {
     cursor: pointer;
-    border: 2px solid gray;
+    border: 1px solid gray;
+    display: 
   }
   #button:active {
     background-color: #555;
@@ -59,12 +83,18 @@ html, body {
   img {
     height: 100px;
     width: 100px;
+    max-width: 100%;
+    max-height: auto;
   }
   
    /* =========================================== styling primera seccion =========================== */
   #cvDesc {
       padding-left: 20px;
       padding-top: 65px;
+  }
+
+  #cvDesc:hover {
+    transform: rotate(6deg);
   }
 
   /* ==================  borde de imagen de perfil =================== */
