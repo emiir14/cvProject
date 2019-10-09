@@ -1,6 +1,4 @@
 html, body {
-    /* background: -webkit-linear-gradient(to left, #FFFFFF, #FFEFBA);  
-    background: linear-gradient(to left, #FFFFFF, #FFEFBA);  */
     background-color: #D3D3D3 !important;
     background-image: url("https://images.unsplash.com/photo-1529448155365-b176d2c6906b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80");
     background-repeat: no-repeat;
@@ -14,11 +12,32 @@ html, body {
     overflow-x: hidden;
   }
 
-
 /* ================================== responsiveness ======================================== */
-  @media (max-width: 600px) {
+  @media (max-width: 1280px) {
+    html, body {
+      background-size: 100% !important;
+    }
+    #contactDiv {
+      width: 85% !important;
+      height: 85% !important;
+    }
+    #button {
+      bottom: 70px !important;
+    }
     #button:hover {
       border: 0px !important;
+    }
+  }
+
+  @media (max-width: 600px) {
+    #button {
+      bottom: 70px !important;
+    }
+    #button:hover {
+      border: 0px !important;
+    }
+    html, body {
+      background-size: 100% !important;
     }
     #navShrink {
       padding-top: 9px !important;
@@ -37,10 +56,9 @@ html, body {
       width: 85% !important;
       height: 85% !important;
     }
-    /* img {
-      width: 50% !important;
-      height: 50% !important;
-    } */
+    #footerDiv {
+      padding-top: 150px !important;
+    }
   }
 
 /* =============================== back to top buttom =============================== */
@@ -70,7 +88,6 @@ html, body {
   #button:hover {
     cursor: pointer;
     border: 1px solid gray;
-    display: 
   }
   #button:active {
     background-color: #555;
@@ -142,14 +159,13 @@ html, body {
   }
   
 /* =========================================== styling tercera sección ====================================== */
+  #three {
+    padding-top: 17px;
+  }
   #contactDiv {
     padding-top: 87px;
   }
-
-  #contactP {
-    padding-top: 17px;
-  }
-                           
+                   
   .pxl-border {   
     width: 70%;
     box-shadow: -2px 0 0 0 black, 2px 0 0 0 black, 0 -4px 0 0 black, 0 4px 0 0 black, 0 -10px 0 -2px black, 0 10px 0 -2px black, 0 -14px 0 -4px black, 0 14px 0 -4px black, 0 -20px 0 -8px black, 0 20px 0 -8px black, 0 -26px 0 -12px black, 0 26px 0 -12px black, -4px 0 0 0 white, 4px 0 0 0 white, 0 -2px 0 2px white, 0 2px 0 2px white, 0 -8px 0 0px white, 0 8px 0 0px white, 0 -12px 0 -2px white, 0 12px 0 -2px white, 0 -16px 0 -4px white, 0 16px 0 -4px white, 0 -22px 0 -8px white, 0 22px 0 -8px white, 0 -28px 0 -12px white, 0 28px 0 -12px white, -6px 0 0 0 black, 6px 0 0 0 black, 0 0 0 4px black, 0 -6px 0 2px black, 0 6px 0 2px black, 0 -10px 0 0 black, 0 10px 0 0 black, 0 -14px 0 -2px black, 0 14px 0 -2px black, 0 -18px 0 -4px black, 0 18px 0 -4px black, 0 -24px 0 -8px black, 0 24px 0 -8px black, 0 -30px 0 -12px black, 0 30px 0 -12px black;
@@ -160,7 +176,7 @@ html, body {
   }
 
   #footerDiv {
-    padding-top: 160px;
+    padding-top: 12%;
     max-width: 600px;
     overflow: hidden;
     margin: 0 auto 50px;
