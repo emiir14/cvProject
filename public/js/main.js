@@ -65,23 +65,25 @@ $(window).scroll(function () {
 			, wtd = wt + refY - 1
 			, $target;
 
-			if (direction == 'down') {
-				$list.each(function() {
-					var st = $(this).position().top;					
-					if ((st > wt) && (st <= wtd)) {
-						$target = $(this);
-						return false; // just to break the each loop
-					}
-				});
-			} else {
-				wtd = wt - refY + 1;
-				$list.each(function() {
-					var st = $(this).position().top;					
-					if ((st < wt) && (st >= wtd)) {
-						$target = $(this);
-						return false; // just to break the each loop
-					}
-				});
+			if (window.innerWidth > 700) {
+				if (direction == 'down') {
+					$list.each(function() {
+						var st = $(this).position().top;					
+						if ((st > wt) && (st <= wtd)) {
+							$target = $(this);
+							return false; // just to break the each loop
+						}
+					});
+				} else {
+					wtd = wt - refY + 1;
+					$list.each(function() {
+						var st = $(this).position().top;					
+						if ((st < wt) && (st >= wtd)) {
+							$target = $(this);
+							return false; // just to break the each loop
+						}
+					});
+				}
 			}
 			return $target;
 		}
