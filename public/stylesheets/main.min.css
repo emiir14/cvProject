@@ -19,10 +19,13 @@ html, body {
     }
   }
   
-  @media (max-width: 1280px) {
+  @media (max-width: 1199px) {
     html, body {
       background-size: 100% !important;
     }
+    .back {
+      display: none !important;
+     }
     #contactDiv {
       width: 85% !important;
       height: 85% !important;
@@ -35,13 +38,19 @@ html, body {
     }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 575px) {
     html, body {
       background-size: 100% !important;
     }
     #cvDesc {
       display: none !important;
     }
+    .slideRight {
+      animation: none !important;
+    }
+    .back {
+      display: inherit !important;
+     }
     /* ============================== main div img flip and show content ==================== */
     .flip {
       position: relative;
@@ -95,7 +104,7 @@ html, body {
     }
     .flip > .front h1,
     .flip > .back h1 {
-      font-size: 35px;
+      font-size: 30px;
       line-height: 160%;
       color: inherit;
       text-align: center;
@@ -103,18 +112,21 @@ html, body {
     }
     .flip > .front p,
     .flip > .back p {
-      font-size: 25px;
+      font-size: 20px;
       line-height: 160%;
       color: inherit;
       text-align: center;
       padding: 5%;
     }
 
+    .img-border:hover {
+      transform: none !important;
+    }
     .img-border {
       width: 100% !important;
       height: 50% !important;
     }
-    /* .style_prevu_kit:hover {
+    .style_prevu_kit:hover {
       -webkit-transition: none !important;
       -webkit-transform: none !important;
       -ms-transition: none !important;
@@ -123,7 +135,7 @@ html, body {
       -moz-transform: none !important;
       transition: none !important;
       transform: none !important;
-    } */
+    }
     #button {
       bottom: 70px !important;
     }
@@ -132,9 +144,9 @@ html, body {
     }
     #navShrink {
       padding-top: 9px !important;
-      width: 30% !important;
-      height: 30% !important;
-      font-size: 15px !important;
+      width: 31% !important;
+      height: 31% !important;
+      font-size: 10px !important;
     }
     #imgShrink {
       width: 50% !important;
@@ -153,12 +165,6 @@ html, body {
   }
 
 /* =============================== back to top buttom =============================== */
-
-
-
-
-
-
   #button {
     display: inline-block;
     width: 50px;
