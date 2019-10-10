@@ -30,6 +30,9 @@ html, body {
   }
 
   @media (max-width: 600px) {
+    .style_prevu_kit:hover {
+      scale:none;
+    }
     #button {
       bottom: 70px !important;
     }
