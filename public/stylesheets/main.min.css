@@ -158,11 +158,29 @@ html, body {
     .divider {
       margin-top: 5% !important;
     }
-    .pxl-border {
-      width: 50% !important;
+    #contactDiv {
+      padding-top: 5% !important;
     }
-    #footerDiv {
-      padding-top: 150px !important;
+    #three h1 {
+      font-size: 35px !important;
+    }
+    #three p {
+      padding-top: 4% !important;
+      font-size: 25px !important;
+    }
+    .pxl-border {
+      width: 70% !important;
+    }
+    .col-md-2 {
+      display: flex !important;
+      flex-direction: row !important;
+      justify-content: center !important;
+    }
+    #stuff p {
+      font-size: 25px !important;
+    }
+    #footerDiv p {
+      font-size: 20px !important;
     }
   }
 
