@@ -42,7 +42,7 @@ html, body {
     html, body {
       background-size: 100% !important;
     }
-    /* =============================== navbar resize ========================================= */
+    /* ================= navbar resize ================ */
     #navShrink {
       padding-top: 9px !important;
       width: 31% !important;
@@ -62,7 +62,7 @@ html, body {
     .back {
       display: inherit !important;
      }
-    /* ============================== main div img flip and show content ==================== */
+    /* ============= main div img flip and show content =========== */
     .flip {
       position: relative;
     }
@@ -131,10 +131,11 @@ html, body {
       text-align: center;
       padding: 5%;
     }
-
     .img-border:hover {
       transform: none !important;
     }
+
+    /* ======= third section and back to top button ======= */
     .img-border {
       width: 100% !important;
       height: 50% !important;
