@@ -42,6 +42,17 @@ html, body {
     html, body {
       background-size: 100% !important;
     }
+    /* =============================== navbar resize ========================================= */
+    #navShrink {
+      padding-top: 9px !important;
+      width: 31% !important;
+      height: 31% !important;
+      font-size: 10px !important;
+    }
+    #imgShrink {
+      width: 50% !important;
+      height: 50% !important;
+    }
     #cvDesc {
       display: none !important;
     }
@@ -98,6 +109,8 @@ html, body {
       display: block;
       width: inherit;
       background-image: url(https://i.imgur.com/l6vqMIw.jpg);
+      background-color: hsla(0,0%,100%,0.70);
+      background-blend-mode: overlay;
       background-size: cover !important;
       background-position: center !important;
       height: 100%;
@@ -114,7 +127,7 @@ html, body {
     .flip > .back p {
       font-size: 20px;
       line-height: 160%;
-      color: inherit;
+      color: black;
       text-align: center;
       padding: 5%;
     }
@@ -142,22 +155,11 @@ html, body {
     #button:hover {
       border: 0px !important;
     }
-    #navShrink {
-      padding-top: 9px !important;
-      width: 31% !important;
-      height: 31% !important;
-      font-size: 10px !important;
-    }
-    #imgShrink {
-      width: 50% !important;
-      height: 50% !important;
-    }
     .divider {
       margin-top: 5% !important;
     }
-    #contactDiv {
-      width: 85% !important;
-      height: 85% !important;
+    .pxl-border {
+      width: 50% !important;
     }
     #footerDiv {
       padding-top: 150px !important;
@@ -280,7 +282,8 @@ html, body {
   }  
 
   #finalRowDivs {
-    padding-top: 35px;
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
 
   #footerDiv {
@@ -504,7 +507,7 @@ html, body {
 
   .style_prevu_kit  {
     display:inline-block;
-    height: 170px;
+    height: 50%;
     position: relative;
     -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1); 
