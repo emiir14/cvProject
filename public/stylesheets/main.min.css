@@ -201,12 +201,24 @@ html, body {
       width: 70% !important;
     }
     .col-md-2 {
+      margin-bottom: 12% !important;
       display: flex !important;
       flex-direction: row !important;
       justify-content: center !important;
     }
+    #padBot {
+      margin-bottom: 25% !important;
+      justify-content: center !important;
+    }
+    #padBot p {
+      margin-left: 20% !important;
+    }
+    #stuff {
+      opacity: 1.0 !important;
+    }  
     #stuff p {
-      font-size: 25px !important;
+      padding-top: 90px !important;
+      font-size: 23px !important;
     }
     #footerDiv p {
       font-size: 20px !important;
