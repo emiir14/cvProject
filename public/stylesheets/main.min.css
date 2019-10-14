@@ -131,6 +131,19 @@ html, body {
       text-align: center;
       padding: 5%;
     }
+    #divImgSection2 {
+      display: none !important;
+    }
+    #two .col-md-4 {
+      width: 80% !important;
+    }
+    #two .col-md-4 h1 {
+      font-size: 18px !important; 
+    }
+    #two .col-md-4 p {
+      font-size: 13px !important; 
+      padding-top: 9px !important;
+    }
     .img-border:hover {
       transform: none !important;
     }
@@ -161,6 +174,9 @@ html, body {
     }
     #contactDiv {
       padding-top: 5% !important;
+    }
+    #three {
+      padding-top: 0 !important;
     }
     #three h1 {
       font-size: 35px !important;
@@ -293,20 +309,55 @@ html, body {
   }
   #contactDiv {
     padding-top: 87px;
+    height: 200px;
   }
                    
   .pxl-border {   
     width: 70%;
     box-shadow: -2px 0 0 0 black, 2px 0 0 0 black, 0 -4px 0 0 black, 0 4px 0 0 black, 0 -10px 0 -2px black, 0 10px 0 -2px black, 0 -14px 0 -4px black, 0 14px 0 -4px black, 0 -20px 0 -8px black, 0 20px 0 -8px black, 0 -26px 0 -12px black, 0 26px 0 -12px black, -4px 0 0 0 white, 4px 0 0 0 white, 0 -2px 0 2px white, 0 2px 0 2px white, 0 -8px 0 0px white, 0 8px 0 0px white, 0 -12px 0 -2px white, 0 12px 0 -2px white, 0 -16px 0 -4px white, 0 16px 0 -4px white, 0 -22px 0 -8px white, 0 22px 0 -8px white, 0 -28px 0 -12px white, 0 28px 0 -12px white, -6px 0 0 0 black, 6px 0 0 0 black, 0 0 0 4px black, 0 -6px 0 2px black, 0 6px 0 2px black, 0 -10px 0 0 black, 0 10px 0 0 black, 0 -14px 0 -2px black, 0 14px 0 -2px black, 0 -18px 0 -4px black, 0 18px 0 -4px black, 0 -24px 0 -8px black, 0 24px 0 -8px black, 0 -30px 0 -12px black, 0 30px 0 -12px black;
-  }  
+  } 
+  
+  /* =============== pixelated border ============ */
+
+  .style_prevu_kit  {
+    display:inline-block;
+    height: 50%;
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);   
+  }
+
+  .style_prevu_kit:hover  {
+    box-shadow: -2px 0 0 0 black, 2px 0 0 0 black, 0 -4px 0 0 black, 0 4px 0 0 black, 0 -10px 0 -2px black, 0 10px 0 -2px black, 0 -14px 0 -4px black, 0 14px 0 -4px black, 0 -20px 0 -8px black, 0 20px 0 -8px black, 0 -26px 0 -12px black, 0 26px 0 -12px black, -4px 0 0 0 white, 4px 0 0 0 white, 0 -2px 0 2px white, 0 2px 0 2px white, 0 -8px 0 0px white, 0 8px 0 0px white, 0 -12px 0 -2px white, 0 12px 0 -2px white, 0 -16px 0 -4px white, 0 16px 0 -4px white, 0 -22px 0 -8px white, 0 22px 0 -8px white, 0 -28px 0 -12px white, 0 28px 0 -12px white, -6px 0 0 0 black, 6px 0 0 0 black, 0 0 0 4px black, 0 -6px 0 2px black, 0 6px 0 2px black, 0 -10px 0 0 black, 0 10px 0 0 black, 0 -14px 0 -2px black, 0 14px 0 -2px black, 0 -18px 0 -4px black, 0 18px 0 -4px black, 0 -24px 0 -8px black, 0 24px 0 -8px black, 0 -30px 0 -12px black, 0 30px 0 -12px black;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
+  }
 
   #finalRowDivs {
     padding-top: 5%;
     padding-bottom: 5%;
   }
 
+  #contactDiv p {
+    font-size: 85%;
+    font-weight: bold;
+  }
+
   #footerDiv {
-    padding-top: 10%;
+    padding-top: 12%;
     max-width: 600px;
     overflow: hidden;
     margin: 0 auto 50px;
@@ -441,6 +492,8 @@ html, body {
     padding: 0;
     font-size: inherit;
     font-family: inherit;
+    min-width: 100px;
+    min-height: 40px;
   }
   button.coverRight {
     width: 12rem;
@@ -520,35 +573,6 @@ html, body {
     -moz-transform:rotate(360deg);
     -webkit-transform:rotate(360deg);
     transform:rotate(360deg);
-  }
-
-/* ================================================= pixelated border ====================================== */
-
-  .style_prevu_kit  {
-    display:inline-block;
-    height: 50%;
-    position: relative;
-    -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1); 
-    -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1); 
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1);
-    transition: all 200ms ease-in;
-    transform: scale(1);   
-  }
-
-  .style_prevu_kit:hover  {
-    box-shadow: -2px 0 0 0 black, 2px 0 0 0 black, 0 -4px 0 0 black, 0 4px 0 0 black, 0 -10px 0 -2px black, 0 10px 0 -2px black, 0 -14px 0 -4px black, 0 14px 0 -4px black, 0 -20px 0 -8px black, 0 20px 0 -8px black, 0 -26px 0 -12px black, 0 26px 0 -12px black, -4px 0 0 0 white, 4px 0 0 0 white, 0 -2px 0 2px white, 0 2px 0 2px white, 0 -8px 0 0px white, 0 8px 0 0px white, 0 -12px 0 -2px white, 0 12px 0 -2px white, 0 -16px 0 -4px white, 0 16px 0 -4px white, 0 -22px 0 -8px white, 0 22px 0 -8px white, 0 -28px 0 -12px white, 0 28px 0 -12px white, -6px 0 0 0 black, 6px 0 0 0 black, 0 0 0 4px black, 0 -6px 0 2px black, 0 6px 0 2px black, 0 -10px 0 0 black, 0 10px 0 0 black, 0 -14px 0 -2px black, 0 14px 0 -2px black, 0 -18px 0 -4px black, 0 18px 0 -4px black, 0 -24px 0 -8px black, 0 24px 0 -8px black, 0 -30px 0 -12px black, 0 30px 0 -12px black;
-    z-index: 2;
-    -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1.5);
-    -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1.5);   
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1.5);
-    transition: all 200ms ease-in;
-    transform: scale(1.5);
   }
 
 /* ========================================= show content on hover =========================== */

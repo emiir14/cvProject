@@ -162,7 +162,11 @@ btn.on('click', function(e) {
 
 $(".rotate").click(function () {
     $(this).toggleClass("down");
-})
+});
+
+// ===========================================   ============================
+
+
 
 
 
