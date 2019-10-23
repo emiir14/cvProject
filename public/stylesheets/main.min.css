@@ -49,8 +49,9 @@ html, body {
 
   @media (max-width: 575px) {
     html, body {
-      background-image: url("https://i.imgur.com/Gzm7nrC.jpg");
+      background-image: url("https://www2.lunapic.com/do-not-link-here-use-hosting-instead/157180434457999989?1424946");
       background-size: cover !important;
+      font-weight: bold !important;
     }
     /* ================= navbar resize ================ */
     #navShrink {
@@ -217,6 +218,7 @@ html, body {
     #padBot p {
       margin-left: 20% !important;
     }
+     /* ====== increase clicking area of a ===== */
     .col-md-2 a {
       display: inline-block;     
       position: relative;    
