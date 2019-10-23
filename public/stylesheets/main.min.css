@@ -49,6 +49,7 @@ html, body {
 
   @media (max-width: 575px) {
     html, body {
+      background-image: url("https://i.imgur.com/Gzm7nrC.jpg");
       background-size: cover !important;
     }
     /* ================= navbar resize ================ */
@@ -156,6 +157,9 @@ html, body {
       font-size: 13px !important; 
       padding-top: 9px !important;
     }
+    .col-md-4 p {
+      padding-bottom: 12% !important;
+    }
     .img-border:hover {
       transform: none !important;
     }
@@ -207,11 +211,18 @@ html, body {
       justify-content: center !important;
     }
     #padBot {
-      margin-bottom: 25% !important;
+      padding-bottom: 25% !important;
       justify-content: center !important;
     }
     #padBot p {
       margin-left: 20% !important;
+    }
+    .col-md-2 a {
+      display: inline-block;     
+      position: relative;    
+      z-index: 1;     
+      padding: 2em;     
+      margin: -2em; 
     }
     #stuff {
       opacity: 1.0 !important;
