@@ -19,7 +19,7 @@
     "gulp-rename": "^1.2.3",
     "gulp-sass": "^4.0.1",
     "hoek": "^4.2.1",
-    "node-sass": "^4.9.0"
+    "node-sass": "^7.0.0"
   },
   "keywords": [
     "node",
